@@ -53,7 +53,7 @@
                 eventDate = new Date(2013, 3, 6, 9, 0, 0),
                 timeDifference = get_time_difference(dateCurrent, eventDate);
 
-            $('#counter').countdown({
+            $('#counter:visible').countdown({
               image: 'assets/lib/countdown/img/digits.png',
               startTime: timeDifference.days+':'+timeDifference.hours+':'+timeDifference.minutes+':'+timeDifference.seconds,
               format: "dd:hh:mm:ss",
