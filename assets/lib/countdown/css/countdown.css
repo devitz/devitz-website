@@ -1,0 +1,41 @@
+.header {
+  padding-bottom: 50px;
+}
+
+.counter-wrapper {
+  padding: 20px 0 0 23%;
+}
+
+.counter-bg {
+  float: left;
+  background: #fff;
+  padding: 10px;
+
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.cntSeparator {
+  font-size: 54px;
+  margin: 29px 7px;
+  color: #000;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .3);
+}
+
+.desc { 
+  clear: both;
+  padding: 7px 3px; 
+}
+
+.desc div {
+  float: left;
+  width: 106px;
+  padding: 4px 0 0 0;
+  margin-right: 32px;
+  font-size: 2em;
+  letter-spacing: -.02em;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .3);
+}
