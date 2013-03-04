@@ -1,7 +1,7 @@
 var geocoder,
     map,
     google,
-    icon = 'img/marker-default.png';
+    icon = '/assets/img/marker-default.png';
 
 function initialize() {
     'use strict';
