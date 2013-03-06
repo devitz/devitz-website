@@ -37,12 +37,14 @@
 
                 oDiff.hours = Math.floor(nTotalDiff/1000/60/60);
                 nTotalDiff -= oDiff.hours*1000*60*60;
-
+                
                 oDiff.minutes = Math.floor(nTotalDiff/1000/60);
                 nTotalDiff -= oDiff.minutes*1000*60;
 
                 oDiff.seconds = Math.floor(nTotalDiff/1000);
-
+                
+                if (oDiff.days < 10) oDiff.days = '0' + oDiff.days;
+                if (oDiff.hours < 10) oDiff.hours = '0' + oDiff.hours;
                 if (oDiff.minutes < 10) oDiff.minutes = '0' + oDiff.minutes;
                 if (oDiff.seconds < 10) oDiff.seconds = '0' + oDiff.seconds;
 
