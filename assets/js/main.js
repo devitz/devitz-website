@@ -62,12 +62,21 @@
             });
         },
 
+        confirmUser: function () {
+            var qs = window.location.search;
+            if (qs) {
+                var name = decodeURIComponent(qs.split('=')[1].replace('/', ''));
+                console.log(name);
+            }
+        },
+
         init : function () {
             var that = this;
 
             $(function () {
                 that.animateScroll();
                 that.countDown();
+                that.confirmUser();
             });
         }
     }).init();
