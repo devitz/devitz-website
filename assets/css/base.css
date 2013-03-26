@@ -213,6 +213,33 @@ nav {
 .form textarea {height:300px;}
 .form .btn {float:right;}
 
+#confirmated {
+    box-shadow: 1px 1px 25px #000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: -75px 0 0 -250px;
+    border-radius: 10px;
+    position: absolute;
+    background: #fff;
+    padding: 20px;
+    z-index: 1000;
+    height: 150px;
+    width: 500px;
+    top: -200px;
+    left: 50%;
+}
+#confirmated a {
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    background: #222;
+    font-size: 14px;
+    margin: 0 auto;
+    display: block;
+    width: 120px;
+    height: 30px;
+    color: #fff;
+}
 
 
 /* =============================================================================

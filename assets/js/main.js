@@ -65,8 +65,17 @@
         confirmUser: function () {
             var qs = window.location.search;
             if (qs) {
-                var name = decodeURIComponent(qs.split('=')[1].replace('/', ''));
-                console.log(name);
+                var name = decodeURIComponent(qs.split('=')[1].replace('/', '')),
+                    $confirmated = $('#confirmated');
+
+                $confirmated.find('p').text($confirmated.find('p').text().replace('{name}', name));
+                $confirmated.animate({
+                    top: '40%'
+                }, 1000);
+                $confirmated.find('a').on('click', function(e){
+                    $confirmated.fadeOut();
+                    e.preventDefault();
+                });
             }
         },
 
