@@ -67,7 +67,7 @@
             if (qs) {
                 var qs = qs.split('=');
 
-                if (qs[0] === '?confirmated') {
+                if (qs[0] === '?confirmed') {
                     var name = decodeURIComponent(qs[1].replace('/', '')),
                         $confirmated = $('#confirmated');
 
