@@ -3,6 +3,7 @@
 }
 
 .counter-wrapper {
+  display: none;
   padding-top: 20px;
   text-align: center;
 }
