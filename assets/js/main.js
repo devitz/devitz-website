@@ -88,7 +88,7 @@
 
             $(function () {
                 that.animateScroll();
-                that.countDown();
+                // that.countDown();
                 that.confirmUser();
             });
         }
