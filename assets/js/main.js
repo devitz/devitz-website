@@ -52,7 +52,7 @@
             }
 
             var dateCurrent = new Date(),
-                eventDate = new Date(2014, 9, 18, 9, 0, 0),
+                eventDate = new Date(2016, 10, 5, 9, 0, 0),
                 timeDifference = get_time_difference(dateCurrent, eventDate);
 
             $('#counter:visible').countdown({
