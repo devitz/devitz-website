@@ -32,33 +32,20 @@ p {
 }
 
 /* =============================================================================
-   NAVIGATION
-   ========================================================================== */
-nav {
-  padding:15px 0;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-}
-.nav-item {
-  display: inline-block;
-  margin-right:15px;
-}
-.nav-link {font-size: 1.4em;}
-
-/* =============================================================================
    HEADER
    ========================================================================== */
 .header {
-  padding: 100px 0 100px;
+  padding: 395px 0 100px;
   text-align:center;
 }
 .logo-name {
+  display: none;
   margin-bottom: 0;
   font-size: 10em;
   letter-spacing: -.04em;
 }
 .tagline {
+  display: none;
   margin-bottom:50px;
   font-size: 2em;
   letter-spacing: -.02em;
@@ -307,7 +294,7 @@ nav {
 @media only screen and (max-width : 480px) {
   /* nav */
   nav {display: none;}
-  .header {padding:20px 0;}
+  ./eader {padding:20px 0;}
   .logo-name {font-size: 4em;}
   .tagline {
     margin-bottom:15px;

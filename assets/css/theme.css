@@ -1,10 +1,13 @@
 /* =============================================================================
    MAIN LAYOUT
    ========================================================================== */
-html {
-  background:#F6F6F6;
+html { background:#F6F6F6;
   font:normal normal 10px/1.2em helvetica, arial, sans-serif;
   color:#777;
+}
+
+body {
+  padding-top: 67px;
 }
 
 /* =============================================================================
@@ -15,12 +18,57 @@ h1, h2, h3, h4, h5, h6 {color:#2b2b2b;}
 /* =============================================================================
    NAVIGATION
    ========================================================================== */
-nav {background: #2b2b2b;}
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: $main-header-full-height;
+  padding: $main-header-padding 0;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  z-index: 999;
+  opacity: 1;
+  background: rgba(255, 255, 255, 1);
+  transition: background .300s ease-in-out;
+}
+
+#nav.scrolled {
+  background: rgba(255, 255, 255, .9);
+}
+
+.title {
+  float: left;
+  padding: 15px;
+}
+
+.title__image {
+  width: 120px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main-nav__item {
+  height: 67px;
+  line-height: 67px; 
+  font-size: 18px;
+  font-family: Roboto, Verdana, sans-serif;
+  color: #444;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
 .nav-link {color:#e7e7e7;}
 .nav-link:active,
 .nav-link:hover,
 .nav-link:focus,
 .nav-link.current {color:#fff;}
+
+
 
 /* =============================================================================
    HEADER
@@ -29,7 +77,7 @@ nav {background: #2b2b2b;}
   background-image: url('../img/cover.jpg');
   background-color: #2b2b2b;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   background-size: 100% auto;
 }
 .logo-link, .tagline, .call-action-area .price {
